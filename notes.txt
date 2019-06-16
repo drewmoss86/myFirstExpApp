@@ -1,0 +1,14 @@
+1) Create directory (ex myapp)
+2) Set up package.json file (npm init) --> go through prompt
+   a. Entry point -> remember the name of this file or check in package.json
+2) Install express (npm install express --save)
+3) Test everything is running 
+const express = require('express')
+const app = express()
+const port = 3000 // or whatever port number
+
+app.get('/', (req, res) => res.send('Hello World!'))
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+4) express-generator package installs the express command-line too ( npm install express-generator -g)
